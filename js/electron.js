@@ -64,6 +64,8 @@ function createWindow() {
 	// Open the DevTools if run with "npm start dev"
 	if (process.argv.includes("dev")) {
 		mainWindow.webContents.openDevTools();
+		electronOptionsDefaults.fullscreen = false;
+		electronOptionsDefaults.autoHideMenuBar = false;
 	}
 
 	// Set responders for window events.

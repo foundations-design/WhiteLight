@@ -1,9 +1,24 @@
 :root {
+  /**** COLOR ****/
   --color-text: #fff;
   --color-background: black;
-  --base: 20px;
+
+  /**** TYPOGRAPHY ****/
   --font-primary: "Roboto Condensed";
   --font-secondary: "Roboto";
+  --base: 20px;
+  --text-scale: 1.5;
+  --text-xs: calc(var(--base) / var(--text-scale));
+  --text-sm: var(--base);
+  --text-md: calc(var(--text-sm) * var(--text-scale));
+  --text-lg: calc(var(--text-md) * var(--text-scale));
+  --text-xl: calc(var(--text-lg) * var(--text-scale));
+  --text-2xl: calc(var(--text-xl) * var(--text-scale));
+  --text-3xl: calc(var(--text-2xl) * var(--text-scale));
+
+  /**** SPACING ****/
+  --grid-gap: 1rem;
+  --outside-margin: 4rem;
 }
 
 html {
@@ -48,27 +63,27 @@ body {
 }
 
 .xsmall {
-  font-size: calc(var(--base) / 1.5);
+  font-size: var(--text-xs);
   line-height: 1.4;
 }
 
 .small {
-  font-size: var(--base);
+  font-size: var(--text-sm);
   line-height: 1.4;
 }
 
 .medium {
-  font-size: calc(var(--base) * 1.5);
+  font-size: calc(var(--text-md));
   line-height: 1.4;
 }
 
 .large {
-  font-size: calc(var(--base) * 1.5 * 1.5);
+  font-size: calc(var(--text-lg));
   line-height: 1;
 }
 
 .xlarge {
-  font-size: calc(var(--base) * 1.5 * 1.5 * 1.5);
+  font-size: calc(var(--text-xl));
   line-height: 1;
   letter-spacing: -3px;
 }

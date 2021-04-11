@@ -48,18 +48,15 @@ body {
  */
 
 .dimmed {
-  color: var(--color-text);
-  opacity: 0.4;
+  color: var(--color-text-dimmed);
 }
 
 .normal {
   color: var(--color-text);
-  opacity: 0.7;
 }
 
 .bright {
-  color: var(--color-text);
-  opacity: 1;
+  color: var(--color-text-bright);
 }
 
 .xsmall {
@@ -125,7 +122,7 @@ header {
   line-height: 15px;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  color: #999;
+  color: var(--color-text);
 }
 
 sup {

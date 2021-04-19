@@ -7,3 +7,6 @@
 [submodule "modules/WL-CoinMarketCap"]
 	path = modules/WL-CoinMarketCap
 	url = https://github.com/earlman/WL-CoinMarketCap
+[submodule "modules/WL-YNAB"]
+	path = modules/WL-YNAB
+	url = https://github.com/earlman/WL-YNAB.git

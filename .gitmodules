@@ -1,3 +1,6 @@
 [submodule "modules/WL-CalendarWeek"]
 	path = modules/WL-CalendarWeek
 	url = https://github.com/foundations-design/WL-CalendarWeek.git
+[submodule "modules/WL-Wallpaper"]
+	path = modules/WL-Wallpaper
+	url = https://github.com/foundations-design/WL-Wallpaper

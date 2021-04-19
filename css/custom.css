@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  /**** COLOR ****/
+  --color-text: lightcyan;
+  --color-background: #464656;
+  --color-text-dimmed: rgba(224, 255, 255, 0.8);
+  --color-text-bright: lightcyan;
+
+  /**** TYPOGRAPHY ****/
+  --font-primary: "Poppins";
+  --font-secondary: "Poppins";
+  --base: 18px;
+  --text-scale: 1.5;
+  --text-xs: calc(var(--base) / var(--text-scale));
+  --text-sm: var(--base);
+  --text-md: calc(var(--text-sm) * var(--text-scale));
+  --text-lg: calc(var(--text-md) * var(--text-scale));
+  --text-xl: calc(var(--text-lg) * var(--text-scale));
+  --text-2xl: calc(var(--text-xl) * var(--text-scale));
+  --text-3xl: calc(var(--text-2xl) * var(--text-scale));
+
+  /**** SPACING ****/
+  --grid-gap: 1rem;
+  --outside-margin: 4rem;
+  --space-unit: 1rem;
+  --space-3xs: calc(var(--space-unit) / 3);
+  --space-2xs: calc(2 * var(--space-unit) / 3);
+  --space-xs: var(--space-unit);
+  --space-sm: calc(var(--space-2xs) + var(--space-xs));
+  --space-md: calc(var(--space-xs) + var(--space-sm));
+  --space-lg: calc(var(--space-sm) + var(--space-md));
+  --space-xl: calc(var(--space-md) + var(--space-lg));
+  --space-2xl: calc(var(--space-lg) + var(--space-xl));
+  --space-3xl: calc(var(--space-xl) + var(--space-2xl));
+
+  /*** ELEMENTS ***/
+  --border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* CALENDAR WEEK STYLES */
+
+.MMM-CalendarWeek h3 {
+  padding-bottom: var(--space-2xs);
+  border-bottom: var(--border);
+  margin: 0;
+}
+
+.MMM-CalendarWeek .col {
+  padding: var(--space-xs);
+  border-left: 5px solid var(--color-background);
+  border-right: 5px solid var(--color-background);
+}
+
+.MMM-CalendarWeek .col:not(.empty) {
+  border-top: 10px solid var(--color-text-dimmed);
+}
+
+.MMM-CalendarWeek .empty .title {
+  font-size: var(--text-md);
+}
+
+.MMM-CalendarWeek .date td {
+  font-size: var(--text-sm);
+  padding-bottom: var(--space-md);
+}
+
+.MMM-CalendarWeek .event {
+  display: grid;
+}
+
+.MMM-CalendarWeek .event .time {
+  font-size: var(--text-md);
+  margin-left: var(--space-sm);
+  grid-row: 2;
+}
+.MMM-CalendarWeek .location {
+  padding-left: var(--space-sm);
+}
+
+.MMM-CalendarWeek .event .title {
+  font-size: var(--text-lg);
+  grid-row: 1;
+}
+
+.MMM-CalendarWeek .symbol,
+.MMM-CalendarWeek .blank {
+  display: none;
+}
+
+/* ~CALENDAR WEEK STYLES~ */

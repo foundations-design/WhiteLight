@@ -65,7 +65,7 @@ Temporary Items
 !/modules/README.md**
 
 # Ignore changes to the custom css files.
-/css/custom.css
+# /css/custom.css
 
 # Ignore users config file but keep the sample.
 /config/*

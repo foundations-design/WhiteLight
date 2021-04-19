@@ -10,7 +10,7 @@
   /**** TYPOGRAPHY ****/
   --font-primary: "Poppins";
   --font-secondary: "Poppins";
-  --base: 22px;
+  --base: 18px;
   --text-scale: 1.5;
   --text-xs: calc(var(--base) / var(--text-scale));
   --text-sm: var(--base);

@@ -4,3 +4,6 @@
 [submodule "modules/WL-Wallpaper"]
 	path = modules/WL-Wallpaper
 	url = https://github.com/foundations-design/WL-Wallpaper
+[submodule "modules/WL-CoinMarketCap"]
+	path = modules/WL-CoinMarketCap
+	url = https://github.com/earlman/WL-CoinMarketCap

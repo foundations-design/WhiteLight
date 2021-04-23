@@ -3,7 +3,7 @@
 :root {
   /**** COLOR ****/
   --color-text: lightcyan;
-  --color-background: #464656;
+  --color-background: rgba(70, 70, 86, 0.5);
   --color-text-dimmed: rgba(224, 255, 255, 0.8);
   --color-text-bright: lightcyan;
 
